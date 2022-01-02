@@ -5,15 +5,15 @@ const path = require("path");
 let jsmediatags = require("jsmediatags");
 // const { on } = require("events");
 // ///////////////////////////////////////////////////////
-const audioPlayer = document.getElementById("audioPlayer");
-const playList = document.getElementById("playList");
-const playList_blue = playList.getElementsByTagName("img");
-const playList_li = playList.getElementsByTagName("li");
-const title = document.getElementById("title");
-const btnpause = document.getElementsByClassName("btn_pause");
-const btnplay = document.getElementsByClassName("btn_play");
-const input = document.getElementById("myInput");
-const p_1 = document.getElementsByClassName("p_1");
+// const audioPlayer = document.getElementById("audioPlayer");
+// const playList = document.getElementById("playList");
+// const playList_blue = playList.getElementsByTagName("img");
+// const playList_li = playList.getElementsByTagName("li");
+// const title = document.getElementById("title");
+// const btnpause = document.getElementsByClassName("btn_pause");
+// const btnplay = document.getElementsByClassName("btn_play");
+// const input = document.getElementById("myInput");
+// const p_1 = document.getElementsByClassName("p_1");
 // ///////////////////////////////////////////////////////
 let dir_path = `${__dirname}/../muziek/`; // dir_path = MUZIEK MAP PATH
 // let dir_path = `${__dirname}/../mp3/`; // dir_path = MUZIEK MAP PATH
