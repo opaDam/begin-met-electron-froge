@@ -22,6 +22,7 @@ function read_dir() {
           array_audio.push(file); // ***** ARRAY 
         }
         console.log(index + " - " + file);
+        return array_audio;
       });
     }
   });
