@@ -1,6 +1,7 @@
 // console.log('ok');
 const fs = require("fs");
 const path = require("path");
+// const { listenerCount } = require("process");
 // ///////////////////////////////////////////////////////
 let dir_path = `${__dirname}/../muziek/`; // dir_path = MUZIEK MAP PATH
 let array_audio = [];
@@ -21,8 +22,14 @@ function read_dir() {
           file = file.substring(0, file.length - 4);
           array_audio.push(file); // ***** ARRAY 
         }
+
         console.log(index + " - " + file);
-        return array_audio;
+        const prt = document.getElementById('prt_ul');
+
+        for (let index = 0; index < array_audio.length; index++) {
+            let list = array_audio[index];
+            prt.innerHTML += "<li>"+list+"</li>"  
+        }
       });
     }
   });
@@ -30,11 +37,13 @@ function read_dir() {
 // EINDE /////////////////////////////////////////////////
 read_dir();
 
-const print = document.querySelector('.prt_ul');
+const prt = document.getElementById('prt_ul');
 
-array_audio.forEach((file, index) => {
-    print.innerHTML += `<li>${file}</li>`;
-})
+for (let index = 0; index < array_audio.length; index++) {
+    let list = array_audio[index];
+    prt.innerHTML += "<li>"+list+"</li>"  
+}
+    
 
 
 // [
