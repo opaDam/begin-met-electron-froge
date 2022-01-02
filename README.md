@@ -1,6 +1,8 @@
 # begin-met-electron-froge
 
-# git clone
+# git clone https://github.com/opaDam/begin-met-electron-froge.git
+
+# cd begin-met-electron-froge
 
 # npm install
 
