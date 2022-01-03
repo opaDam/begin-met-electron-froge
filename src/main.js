@@ -2,7 +2,10 @@
 const fs = require("fs");
 const path = require("path");
 const { listenerCount } = require("process");
+
 // ///////////////////////////////////////////////////////
+const prt = document.getElementById('prt_ul');
+
 let dir_path = `${__dirname}/../muziek/`; // dir_path = MUZIEK MAP PATH
 let array_audio = [];
 // ///////////////////////////////////////////////////////
@@ -29,7 +32,6 @@ function read_dir() {
         }
 
         console.log(index + " - " + file);
-        const prt = document.getElementById('prt_ul');
 
         for (let index = 0; index < array_audio.length; index++) {
             let list = array_audio[index];
@@ -42,12 +44,12 @@ function read_dir() {
 // EINDE /////////////////////////////////////////////////
 read_dir();
 
-const prt = document.getElementById('prt_ul');
-
-for (let index = 0; index < array_audio.length; index++) {
-    let list = array_audio[index];
-    prt.innerHTML += "<li>"+list+"</li>"  
-}
+// const prt = document.getElementById('prt_ul');
+// prt.innerHTML = ""  
+// for (let index = 0; index < array_audio.length; index++) {
+//     let list = array_audio[index];
+//     prt.innerHTML += "<li>"+list+"</li>"  
+// }
     
 
 
