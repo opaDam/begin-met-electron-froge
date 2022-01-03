@@ -1,9 +1,9 @@
 // console.log('ok');
 const fs = require("fs");
 const path = require("path");
-// const { listenerCount } = require("process");
+const { listenerCount } = require("process");
 // ///////////////////////////////////////////////////////
-// let dir_path = `${__dirname}/../muziek/`; // dir_path = MUZIEK MAP PATH
+let dir_path = `${__dirname}/../muziek/`; // dir_path = MUZIEK MAP PATH
 let array_audio = [];
 // ///////////////////////////////////////////////////////
 array_audio = [
@@ -40,7 +40,7 @@ function read_dir() {
   });
 }
 // EINDE /////////////////////////////////////////////////
-// read_dir();
+read_dir();
 
 const prt = document.getElementById('prt_ul');
 
